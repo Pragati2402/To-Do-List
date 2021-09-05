@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your List</title>
+    <link rel="shortcut icon" href="checkMark.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="title">TO DO LIST</h2>
+        <input class="search border-radius" type="text" placeholder="Search.." id="filter">
+    </header>
+    <section>
+        <form id="addForm">
+            <input type="text" class="border-radius" id="item" placeholder="Add Task..">
+            <input type="submit" class="border-radius" value="Click Here to Add" id="submit">
+        </form>
+        <h3 id="incom">Incomplete Tasks</h3>
+        <div class="mainTasks">
+            <ul class="list" id="items">
+                <li class="item">
+                    <input type="checkbox" name="List" id="list1"><label class="strikeThrough" for="list1">Task 1</label><button
+                        Class="btn-del border-radius">Delete </button>
+                </li>
+                <li class="item"><input type="checkbox" name="List" id="list2"><label class="strikeThrough" for="list2">Task 2</label> 
+                    <button class="btn-del border-radius">Delete</button>
+                </li>
+                <li class="item"><input type="checkbox" name="List" id="list3"><label class="strikeThrough" for="list3">Task 3</label> <button
+                        class="btn-del border-radius">Delete</button></li>
+            </ul>
+        </div>
+
+    </section>
+   <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+/* font-family: 'Architects Daughter', cursive; */
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /* TO MAKE A RESPONSIVE DESIGN AND USE REM AS A BASE OF 10 PX AS COMAPRED TO DEFAULT 16PX */
+    font-size: 62.5%;  
+    background-color: rgb(68, 67, 67);
+}
+.header{
+    background-color: rgb(1, 155, 250);
+    /* height: 15vh; */
+}
+.title{
+    font-family: 'Architects Daughter', cursive;
+    color: White;
+    font-size: 5.5rem;
+    padding-left: 20rem;
+    padding-top: 2rem;
+    display: inline-block;
+}
+.border-radius{
+    border-radius: 0.4rem;
+   
+}
+h3{
+    font-size: 3rem;
+    text-decoration: underline;
+    color: antiquewhite;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+#filter{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 2.1rem;
+    margin-left: 30rem;
+}
+.mainTasks, .Item{
+    border: 2px solid rgb(126, 124, 124);
+    font-size: 2.2rem;
+    width:50%;
+    margin: auto;
+    list-style-type: none;
+    background: #a1a3a2;
+    padding: 2rem;
+   
+}
+#item , #submit{
+    margin: 2rem 4rem 5rem 4rem ;
+    padding: 1rem;
+}
+
+#submit{
+    background-color: #44ad36;
+    color: #f7f7f7;
+    padding: 1rem;
+}
+.list{
+  list-style-type: none;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-items: center; */
+}
+.item{
+  list-style-type: none;
+  border:2px solid rgb(124, 78, 233);
+  background-color: rgb(245, 244, 244);
+  padding:2rem;
+  margin: 1rem;
+  position: relative;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+label{
+    font-size:3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label.strikeThrough{
+text-decoration: line-through;
+color: rgb(99, 96, 96);
+user-select: none;
+}
+.btn-del{
+    background-color: red;
+    height: 41px;
+    width: 62px;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+.btn-del:hover{
+    box-shadow: 4px 4px #f03737;
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    transition: .3s;
+}
+#submit:hover{
+    box-shadow: 0 0 10px 0 #00d796 inset, 0 0 20px 2px #00d796;
+  border: 3px solid #00d796;
+}
+.btn-del:active, #submit:active{
+    box-shadow: 0 2px rgb(95, 95, 95);
+  transform: translateY(3px);
+
+}
+#item:hover ,#filter:hover{
+background-color: rgb(207, 227, 253);
+}
